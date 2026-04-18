@@ -217,7 +217,7 @@
 </head>
 <body>
 
-    <audio id="bg-music" loop>
+    <audio id="bg-music" loop preload="auto" crossorigin="anonymous">
         <source src="Background Music.mp3" type="audio/mpeg">
     </audio>
 
@@ -243,8 +243,8 @@
             <h1>A Message For You</h1>
             <p>I recorded this so you can hear how much I love you:</p>
             <div class="audio-container">
-                <audio id="audio-1" controls onplay="dimBackground()" onpause="restoreBackground()" onended="restoreBackground()">
-                    <source src="Happy Birthday song.wav" type="audio/wav">
+                <audio id="audio-1" controls preload="metadata" crossorigin="anonymous" onplay="dimBackground()" onpause="restoreBackground()" onended="restoreBackground()">
+                    <source src="Happy Birthday song.mp3" type="audio/mpeg">
                 </audio>
             </div>
             <button class="nav-btn" onclick="showScene(3, 4)">Read My Letter →</button>
@@ -255,7 +255,7 @@
         <div class="content-circle">
             <h1>My Letter to You</h1>
             <div class="scroll-text">
-                <p><b>[I love you so my my queen, I am so Blessed to have you in my life! You are so loving and caring.
+                <p><b>[I love you so much my queen, I am so Blessed to have you in my life! You are so loving and caring.
 You are my life partner and I am so happy thinking that you will be the mother of my children. 
 May God protect you and Bless you with all what you desire and of in life, ende egziabeher fekad 
 yihunelesh.  ]</b></p>
@@ -270,8 +270,8 @@ yihunelesh.  ]</b></p>
         <div class="content-circle">
             <h1>Let's Pray together</h1>
             <div class="audio-container">
-                <audio id="audio-2" controls onplay="dimBackground()" onpause="restoreBackground()" onended="restoreBackground()">
-                    <source src="Prayer.wav" type="audio/wav">
+                <audio id="audio-2" controls preload="metadata" crossorigin="anonymous" onplay="dimBackground()" onpause="restoreBackground()" onended="restoreBackground()">
+                    <source src="Prayer.mp3" type="audio/mpeg">
                 </audio>
             </div>
             <div class="final-msg">
